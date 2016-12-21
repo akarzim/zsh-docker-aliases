@@ -4,7 +4,7 @@ Defines [Docker][1] aliases and functions.
 
 ## How to Install
 
-### With [zplug](https://github.com/zplug/zplug)
+### With [zplug][2]
 
 ```sh
 zplug "akarzim/zsh-docker-aliases"
@@ -91,6 +91,7 @@ zplug "akarzim/zsh-docker-aliases"
   - `dkcP` Unpause services
   - `dkcps` List containers
   - `dkcr` Run a one-off command
+  - `dkcR` Run a one-off command and remove container after run.
   - `dkcrm` Remove stopped containers
   - `dkcs` Start services
   - `dkcsc` Set number of containers for a service
@@ -103,9 +104,10 @@ zplug "akarzim/zsh-docker-aliases"
 
 ## Author
 
-*The author of this module should be contacted via the [issue tracker][2].*
+*The author of this module should be contacted via the [issue tracker][3].*
 
   - [François Vantomme](https://github.com/akarzim)
 
 [1]: https://www.docker.com/
-[2]: https://github.com/akarzim/zsh-docker-aliases/issues
+[2]: https://github.com/zplug/zplug
+[3]: https://github.com/akarzim/zsh-docker-aliases/issues
