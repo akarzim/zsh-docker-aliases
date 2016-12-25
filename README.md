@@ -27,6 +27,7 @@ zplug "akarzim/zsh-docker-aliases"
   - `dkl` Fetch the logs of a container
   - `dkli` Log in to a Docker registry
   - `dklo` Log out from a Docker registry
+  - `dkls` is alias for `dkps`
   - `dkn` Manage Docker networks
   - `dkp` Pause all processes within one or more containers<Paste>
   - `dkP` Unpause all processes within one or more containers
@@ -65,7 +66,7 @@ zplug "akarzim/zsh-docker-aliases"
   - `dkmk` Kill a machine
   - `dkmls` List machines
   - `dkmpr` Re-provision existing machines
-  - `dkmps` alias for `dkmls`
+  - `dkmps` is alias for `dkmls`
   - `dkmrg` Regenerate TLS Certificates for a machine
   - `dkmrm` Remove a machine
   - `dkms` Start a machine
@@ -87,6 +88,7 @@ zplug "akarzim/zsh-docker-aliases"
   - `dkce` Execute a command in a running container
   - `dkck` Kill containers
   - `dkcl` View output from containers
+  - `dkcls` is alias for `dkcps`
   - `dkcp` Pause services
   - `dkcP` Unpause services
   - `dkcps` List containers
