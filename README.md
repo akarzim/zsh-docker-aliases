@@ -59,6 +59,8 @@ zplug "akarzim/zsh-docker-aliases"
   - `dkm` is short for `docker-machine`
   - `dkma` Get or set the active machine
   - `dkmcp` Copy files between machines
+  - `dkmd` Set up the default machine ;
+           alowing you to use `dkme` without arguments
   - `dkme` Set up the environment for the Docker client
            (eg: `dkme staging` to toggle to staging)
   - `dkmin` Inspect information about a machine
