@@ -16,6 +16,10 @@ fi
 
 # Set Docker Machine environment
 function dkme {
+    if (( ! $+commands[docker-machine] )); then
+        return 1
+    fi
+
     eval $(docker-machine env $1)
 }
 
