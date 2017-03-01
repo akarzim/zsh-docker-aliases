@@ -95,10 +95,10 @@ alias dkw='docker wait'
 alias dkx='docker stop'
 
 # Clean up exited containers
-alias dkrmC='docker rm $(docker ps -a | grep Exited | awk '"'"'{ print $1 }'"'"')'
+alias dkrmC='docker rm $(docker ps -qaf status=exited)'
 
 # Clean up dangling images
-alias dkrmI='docker rmi $(docker images -f dangling=true -q)'
+alias dkrmI='docker rmi $(docker images -qf dangling=true)'
 
 # Clean up dangling volumes
 alias dkrmV='docker volume rm $(docker volume ls -qf dangling=true)'
