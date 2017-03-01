@@ -18,6 +18,7 @@ zplug "akarzim/zsh-docker-aliases"
   - `dka` Attach to a running container
   - `dkb` Build an image from a Dockerfile
   - `dkd` Inspect changes on a container's filesystem
+  - `dkdf` Show docker filesystem usage
   - `dke` Run a command in a running container
   - `dkE` Run an interactive command in a running container
   - `dkh` Show the history of an image
@@ -28,9 +29,10 @@ zplug "akarzim/zsh-docker-aliases"
   - `dkli` Log in to a Docker registry
   - `dklo` Log out from a Docker registry
   - `dkls` is alias for `dkps`
-  - `dkn` Manage Docker networks
   - `dkp` Pause all processes within one or more containers<Paste>
   - `dkP` Unpause all processes within one or more containers
+  - `dkpl` Pull an image or a repository from a registry
+  - `dkph` Push an image or a repository to a registry
   - `dkps` List containers
   - `dkpsa` List all containers (default lists just running)
   - `dkr` Run a command in a new container
@@ -42,17 +44,95 @@ zplug "akarzim/zsh-docker-aliases"
   - `dkrmC` Clean up exited containers
   - `dkrmI` Clean up dangling images
   - `dkrmV` Clean up unused volumes ( Docker >= 1.9 )
+  - `dkrn` Rename a container
   - `dks` Start one or more stopped containers
   - `dkS` Restart a container
   - `dkss` Display a live stream of container(s) resource usage statistics
-  - `dksw` Manage Docker Swarm
+  - `dksv` Save one or more images to a tar archive (streamed to STDOUT by default)
   - `dkt` Tag an image into a repository
   - `dktop` Display the running processes of a container
   - `dkup` Update configuration of one or more containers
-  - `dkv` Manage Docker volumes
-  - `dkV` Show the Docker version information
+  - `dkV` Manage Docker volumes
+  - `dkv` Show the Docker version information
   - `dkw` Block until a container stops, then print its exit code<Paste>
   - `dkx` Stop a running container
+
+#### container (C)
+
+  - `dkC` Manage containers
+  - `dkCa` Attach to a running container
+  - `dkCcp` Copy files/folders between a container and the local filesystem
+  - `dkCd` Inspect changes on a container's filesystem
+  - `dkCe` Run a command in a running container
+  - `dkCin` Display detailed information on one or more containers
+  - `dkCk` Kill one or more running containers
+  - `dkCl` Fetch the logs of a container
+  - `dkCls` List containers
+  - `dkCp` Pause all processes within one or more containers
+  - `dkCpr` Remove all stopped containers
+  - `dkCrn` Rename a container
+  - `dkCS` Restart one or more containers
+  - `dkCrm` Remove one or more containers
+  - `dkCr` Run a command in a new container
+  - `dkCR` Run an interactive command in a new container and automatically remove the container when it exits
+  - `dkCRe` like `dkCR` and set entry point to `/bin/bash`
+  - `dkCs` Start one or more stopped containers
+  - `dkCss` Display a live stream of container(s) resource usage statistics
+  - `dkCx` Stop one or more running containers
+  - `dkCtop` Display the running processes of a container
+  - `dkCP` Unpause all processes within one or more containers
+  - `dkCup` Update configuration of one or more containers
+  - `dkCw` Block until one or more containers stop, then print their exit codes
+
+#### image (I)
+
+  - `dkI` Manage images
+  - `dkIb` Build an image from a Dockerfile
+  - `dkIh` Show the history of an image
+  - `dkIim` Import the contents from a tarball to create a filesystem image
+  - `dkIin` Display detailed information on one or more images
+  - `dkIls` List images
+  - `dkIpr` Remove unused images
+  - `dkIpl` Pull an image or a repository from a registry
+  - `dkIph` Push an image or a repository to a registry
+  - `dkIrm` Remove one or more images
+  - `dkIsv` Save one or more images to a tar archive (streamed to STDOUT by default)
+  - `dkIt` Tag an image into a repository
+
+#### volume (V)
+
+  - `dkV` Manage volumes
+  - `dkVin` Display detailed information on one or more volumes
+  - `dkVls` List volumes
+  - `dkVpr` Remove all unused volumes
+  - `dkVrm` Remove one or more volumes
+
+#### network (N)
+
+  - `dkN` Manage networks
+  - `dkNs` Connect a container to a network
+  - `dkNx` Disconnects a container from a network
+  - `dkNin` Displays detailed information on a network
+  - `dkNls` Lists all the networks created by the user
+  - `dkNpr` Remove all unused networks
+  - `dkNrm` Deletes one or more networks
+
+#### system (Y)
+
+  - `dkY` Manage Docker
+  - `dkYdf` Show docker filesystem usage
+  - `dkYpr` Remove unused data
+
+#### stack (K)
+
+  - `dkK` Manage Docker stacks
+  - `dkKls` List stacks
+  - `dkKps` List the tasks in the stack
+  - `dkKrm` Remove the stack
+
+#### swarm (W)
+
+  - `dkW` Manage Docker Swarm
 
 ### Docker Machine
 
@@ -93,6 +173,8 @@ zplug "akarzim/zsh-docker-aliases"
   - `dkcls` is alias for `dkcps`
   - `dkcp` Pause services
   - `dkcP` Unpause services
+  - `dkcpl` Pull service images
+  - `dkcph` Push service images
   - `dkcps` List containers
   - `dkcr` Run a one-off command
   - `dkcR` Run a one-off command and remove container after run.
