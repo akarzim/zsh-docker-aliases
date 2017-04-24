@@ -132,7 +132,6 @@ alias dkIin='docker image inspect'
 alias dkIls='docker image ls'
 alias dkIpr='docker image prune'
 alias dkIpl='docker image pull'
-alias dkIPL='docker images --format '{{ .Repository }}' | xargs -L1 docker pull'
 alias dkIph='docker image push'
 alias dkIrm='docker image rm'
 alias dkIsv='docker image save'
@@ -168,6 +167,9 @@ alias dkrmC='docker rm $(docker ps -qaf status=exited)'
 
 # Clean up dangling images (docker < 1.13)
 alias dkrmI='docker rmi $(docker images -qf dangling=true)'
+
+# Pull all tagged images
+alias dkplI='docker images --format '{{ .Repository }}' | grep -v '^<none>$' | xargs -L1 docker pull'
 
 # Clean up dangling volumes (docker < 1.13)
 alias dkrmV='docker volume rm $(docker volume ls -qf dangling=true)'
