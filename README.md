@@ -25,6 +25,7 @@ zplug "akarzim/zsh-docker-aliases"
 - `dki` List images
 - `dkin` Return low-level information on a container, image or task
 - `dkk` Kill a running container
+- `dkkh` Send `kill -s HUP` signal to a running container
 - `dkl` Fetch the logs of a container
 - `dkli` Log in to a Docker registry
 - `dklo` Log out from a Docker registry
