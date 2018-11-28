@@ -125,6 +125,7 @@ alias dkv='docker version'
 alias dkw='docker wait'
 alias dkx='docker stop'
 
+## Container (C)
 alias dkC='docker container'
 alias dkCa='docker container attach'
 alias dkCcp='docker container cp'
@@ -151,6 +152,7 @@ alias dkCP='docker container unpause'
 alias dkCup='docker container update'
 alias dkCw='docker container wait'
 
+## Image (I)
 alias dkI='docker image'
 alias dkIb='docker image build'
 alias dkIh='docker image history'
@@ -164,12 +166,14 @@ alias dkIrm='docker image rm'
 alias dkIsv='docker image save'
 alias dkIt='docker image tag'
 
+## Volume (V)
 alias dkV='docker volume'
 alias dkVin='docker volume inspect'
 alias dkVls='docker volume ls'
 alias dkVpr='docker volume prune'
 alias dkVrm='docker volume rm'
 
+## Network (N)
 alias dkN='docker network'
 alias dkNs='docker network connect'
 alias dkNx='docker network disconnect'
@@ -178,17 +182,21 @@ alias dkNls='docker network ls'
 alias dkNpr='docker network prune'
 alias dkNrm='docker network rm'
 
+## System (Y)
 alias dkY='docker system'
 alias dkYdf='docker system df'
 alias dkYpr='docker system prune'
 
+## Stack (K)
 alias dkK='docker stack'
 alias dkKls='docker stack ls'
 alias dkKps='docker stack ps'
 alias dkKrm='docker stack rm'
 
+## Swarm (W)
 alias dkW='docker swarm'
 
+## CleanUp (rm)
 # Clean up exited containers (docker < 1.13)
 alias dkrmC='docker rm $(docker ps -qaf status=exited)'
 
@@ -201,7 +209,7 @@ alias dkplI='docker images --format "{{ .Repository }}" | grep -v "^<none>$" | x
 # Clean up dangling volumes (docker < 1.13)
 alias dkrmV='docker volume rm $(docker volume ls -qf dangling=true)'
 
-# Docker Machine
+# Docker Machine (m)
 alias dkm='docker-machine'
 alias dkma='docker-machine active'
 alias dkmcp='docker-machine scp'
@@ -222,7 +230,7 @@ alias dkmup='docker-machine upgrade'
 alias dkmv='docker-machine version'
 alias dkmx='docker-machine stop'
 
-# Docker Compose
+# Docker Compose (c)
 alias dkc='docker-compose'
 alias dkcb='docker-compose build'
 alias dkcB='docker-compose build --no-cache'
