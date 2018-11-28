@@ -53,6 +53,30 @@ function dkmd {
     popd
 }
 
+# Display the first maching docker container filtered by name
+#
+# Usage: dkps! app
+# > docker ps -f "name=app" -f "status=running" -q | head -n 1
+function dkps! {
+  docker ps -f "name=$1" -f "status=running" -q | head -n 1
+}
+
+# Attatch docker by container partial name
+#
+# Usage: dka! app
+# > docker attach $(docker ps -f "name=app" -f "status=running" -q | head -n 1)
+function dka! {
+  dka $(dkps! $1)
+}
+
+# Exec docker interactive command by container partial name
+#
+# Usage: dkE! app bash
+# > docker exec -e COLUMNS=`tput cols` -e LINES=`tput lines` -it $(docker ps -f "name=app" -f "status=running" -q | head -n 1) bash
+function dkE! {
+  dkE $(dkps! $1) $*[2,$]
+}
+
 #
 # Aliases
 #
