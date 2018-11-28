@@ -53,7 +53,7 @@ function dkmd {
     popd
 }
 
-# Display the first maching docker container filtered by name
+# Display the first matching docker container ID by name
 #
 # Usage: dkps! app
 # > docker ps -f "name=app" -f "status=running" -q | head -n 1

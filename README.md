@@ -16,11 +16,13 @@ zplug "akarzim/zsh-docker-aliases"
 
 - `dk` is short for `docker`
 - `dka` Attach to a running container
+- `dka!` Attach to a running container by name
 - `dkb` Build an image from a Dockerfile
 - `dkd` Inspect changes on a container's filesystem
 - `dkdf` Show docker filesystem usage
 - `dke` Run a command in a running container
 - `dkE` Run an interactive command in a running container
+- `dkE!` Run an interactive command in a running container by name
 - `dkh` Show the history of an image
 - `dki` List images
 - `dkin` Return low-level information on a container, image or task
@@ -36,6 +38,7 @@ zplug "akarzim/zsh-docker-aliases"
 - `dkpl` Pull an image or a repository from a registry
 - `dkph` Push an image or a repository to a registry
 - `dkps` List containers
+- `dkps!` Display the first matching docker container ID by name
 - `dkpsa` List all containers (default lists just running)
 - `dkr` Run a command in a new container
 - `dkR` Run an interactive command in a new container and automatically remove the container when it exits
