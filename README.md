@@ -69,6 +69,7 @@ zplug "akarzim/zsh-docker-aliases"
 - `dkCcp` Copy files/folders between a container and the local filesystem
 - `dkCd` Inspect changes on a container's filesystem
 - `dkCe` Run a command in a running container
+- `dkCE` Run an interactive command in a running container
 - `dkCin` Display detailed information on one or more containers
 - `dkCk` Kill one or more running containers
 - `dkCl` Fetch the logs of a container
