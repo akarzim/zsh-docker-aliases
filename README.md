@@ -36,6 +36,7 @@ zplug "akarzim/zsh-docker-aliases"
 - `dkp` Pause all processes within one or more containers<Paste>
 - `dkP` Unpause all processes within one or more containers
 - `dkpl` Pull an image or a repository from a registry
+- `dkplI` Pull all tagged images
 - `dkph` Push an image or a repository to a registry
 - `dkps` List containers
 - `dkps!` Display the first matching docker container ID by name
