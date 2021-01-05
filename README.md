@@ -10,6 +10,12 @@ Defines [Docker][1] aliases and functions.
 zplug "akarzim/zsh-docker-aliases"
 ```
 
+### With [Oh My Zsh](https://ohmyz.sh/):
+```sh
+git clone https://github.com/akarzim/zsh-docker-aliases.git  ~/.oh-my-zsh/custom/plugins/zsh-docker-aliases
+# then add `zsh-docker-aliases` to `plugins` in your .zshrc 
+```
+
 ## Aliases
 
 ### Docker
