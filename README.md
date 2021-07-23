@@ -13,7 +13,7 @@ zplug "akarzim/zsh-docker-aliases"
 ### With [Oh My Zsh](https://ohmyz.sh/):
 ```sh
 git clone https://github.com/akarzim/zsh-docker-aliases.git  ~/.oh-my-zsh/custom/plugins/zsh-docker-aliases
-# then add `zsh-docker-aliases` to `plugins` in your .zshrc 
+# then add `zsh-docker-aliases` to `plugins` in your .zshrc
 ```
 
 ## Aliases
@@ -168,24 +168,33 @@ git clone https://github.com/akarzim/zsh-docker-aliases.git  ~/.oh-my-zsh/custom
 - `dkmS` Restart a machine
 - `dkmu` Get the URL of a machine
 - `dkmup` Upgrade a machine to the latest version of Docker
-- `dkmV` Show the Docker Machine version or a machine docker version
+- `dkmv` Show the Docker Machine version or a machine docker version
 - `dkmx` Stop a machine
 
 ### Docker Compose
 
+> Note from docker-compose v1.29.2:
+> Except for the Linux platform, Docker Compose is now in the Docker CLI.
+
 - `dkc` is short for `docker-compose`
 - `dkcb` Build or rebuild services
 - `dkcB` Build or rebuild services and do not use cache when building the image
+- `dkccp` Copy files/folders between a service container and the local filesystem
+- `dkccr` Creates containers for a service
+- `dkccv` Converts the compose file to platform's canonical format
 - `dkcd` Stop and remove containers, networks, images, and volumes
 - `dkce` Execute a command in a running container
+- `dkcev` Receive real time events from containers
+- `dkci` List images used by the created containers
 - `dkck` Kill containers
 - `dkcl` View output from containers
 - `dkcL` View and follow (`-f`) output from containers
-- `dkcls` is alias for `dkcps`
+- `dkcls` List running compose projects (or alias to `dkcps` under Linux)
 - `dkcp` Pause services
 - `dkcP` Unpause services
 - `dkcpl` Pull service images
 - `dkcph` Push service images
+- `dkcpo` Print the public port for a port binding
 - `dkcps` List containers
 - `dkcr` Run a one-off command
 - `dkcR` Run a one-off command and remove container after run.
@@ -193,10 +202,11 @@ git clone https://github.com/akarzim/zsh-docker-aliases.git  ~/.oh-my-zsh/custom
 - `dkcs` Start services
 - `dkcsc` Set number of containers for a service
 - `dkcS` Restart services
+- `dkct` Display the running processes
 - `dkcu` Create and start containers
 - `dkcU` Create and start containers in detached mode:
            Run containers in the background, print new container names
-- `dkcV` Show the Docker-Compose version information
+- `dkcv` Show the Docker-Compose version information
 - `dkcx` Stop services
 
 ## Author
