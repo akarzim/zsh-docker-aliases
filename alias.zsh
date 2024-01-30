@@ -52,6 +52,7 @@ alias dkV='docker volume'
 alias dkv='docker version'
 alias dkw='docker wait'
 alias dkx='docker stop'
+alias dkif='function dkif_(){ docker images -f "reference=*/*/$1" }; dkif_'
 
 ## Container (C)
 alias dkC='docker container'
