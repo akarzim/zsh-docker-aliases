@@ -52,7 +52,6 @@ alias dkV='docker volume'
 alias dkv='docker version'
 alias dkw='docker wait'
 alias dkx='docker stop'
-alias dkif='function dkif_(){ docker images -f "reference=*/*/$1" }; dkif_'
 
 ## Container (C)
 alias dkC='docker container'
@@ -95,6 +94,7 @@ alias dkIph='docker image push'
 alias dkIrm='docker image rm'
 alias dkIsv='docker image save'
 alias dkIt='docker image tag'
+alias dkIf='function dkIf_(){ docker images -f "reference=*/*/$1*" -f "reference=*$1*" }; dkIf_'
 
 ## Volume (V)
 alias dkV='docker volume'
