@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Moved to [Codeberg](https://codeberg.org/akarzim/zsh-docker-aliases)
+
 # ZSH Docker Aliases
 
 Defines [Docker][1] aliases and functions.
